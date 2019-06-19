@@ -21,6 +21,10 @@ export const otherReducer = ( state = initialState, action ) => {
         ...state,
         clickCount: state.clickCount + 1
       }
+    default:
+      return {
+        ...state
+      }
   }
 }
 

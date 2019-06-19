@@ -17,7 +17,7 @@ export function configureStore(initialStore = {}) {
   const store = createStore(
     rootReducer,
     initialStore,
-    composeWithDevTools(applyMiddleware())
+    bindMiddleware([sagaMiddleware])
   )
 
   store.sagaTask = sagaMiddleware.run(rootSaga)

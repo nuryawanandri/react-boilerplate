@@ -5,7 +5,7 @@ import { otherReducer } from './other'
 
 const rootReducer = combineReducers({
   counter: counterReducer,
-  other: otherReducer,
+  other: otherReducer
 })
 
 export default rootReducer
