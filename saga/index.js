@@ -1,13 +1,13 @@
 import { takeLatest, all } from 'redux-saga/effects'
 
-import { addClickCount } from './other'
+import { getUser } from './other'
 
 import { otherActionTypes } from '../reducer/other'
 
 
 function * rootSaga () {
   yield all([
-    takeLatest(otherActionTypes.ADD_CLICK_COUNT_REQUEST, addClickCount)
+    takeLatest(otherActionTypes.GET_USER_REQUEST, getUser)
   ])
 }
 

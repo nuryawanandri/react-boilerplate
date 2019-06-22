@@ -2,8 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-import { incrementCounter, decrementCounter } from '../../reducer/counter'
-
+import { incrementCounter, decrementCounter } from '../../reducer/counter' 
+import { addClickCountRequest } from '../../reducer/other'
 
 const Counter = props => (
   <div>
@@ -16,7 +16,7 @@ const Counter = props => (
 )
 
 const mapStateToProps = state => ({
-  counter: state.counter.counter
+  counter: state.counter.counter,
 })
 
 const mapDispatchToProps = dispatch => {

@@ -1,25 +1,34 @@
-export const ADD_CLICK_COUNT_REQUEST = 'other/ADD_CLICK_COUNT_REQUEST'
-export const ADD_CLICK_COUNT_SUCCESS = 'other/ADD_CLICK_COUNT_SUCCESS'
+export const GET_USER_REQUEST = 'other/GET_USER_REQUEST'
+export const GET_USER_SUCCESS = 'other/GET_USER_SUCCESS'
+export const GET_USER_FAILURE = 'other/GET_USER_FAILURE'
 
 export const otherActionTypes = {
-  ADD_CLICK_COUNT_REQUEST,
-  ADD_CLICK_COUNT_SUCCESS,
+  GET_USER_REQUEST,
+  GET_USER_SUCCESS,
+  GET_USER_FAILURE
 }
 
 export const initialState = {
   clickCount: 0,
+  error: '',
+  data: [],
 }
 
 export const otherReducer = ( state = initialState, action ) => {
   switch(action.type) {
-    case ADD_CLICK_COUNT_REQUEST:
+    case GET_USER_REQUEST:
       return {
         ...state
       }
-    case ADD_CLICK_COUNT_SUCCESS:
+    case GET_USER_SUCCESS:
       return {
         ...state,
-        clickCount: state.clickCount + 1
+        data: action.data
+      }
+    case GET_USER_FAILURE:
+      return {
+        ...state,
+        error: action.error
       }
     default:
       return {
@@ -28,10 +37,6 @@ export const otherReducer = ( state = initialState, action ) => {
   }
 }
 
-export const addClickCountRequest = () => ({
-  type: ADD_CLICK_COUNT_REQUEST
-})
-
-export const addClickCountSuccess = () => ({
-  type: ADD_CLICK_COUNT_SUCCESS
+export const getUser = () => ({
+  type: GET_USER_REQUEST
 })
