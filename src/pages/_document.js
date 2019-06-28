@@ -5,10 +5,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="stylesheet" href="/static/css/Styles.css" />
+          <link rel="stylesheet" href="/static/css/styles.css" />
         </Head>
         <body>
-          <Main />
+          <div className="container">
+            <Main />
+          </div>
           <NextScript />
         </body>
       </Html>

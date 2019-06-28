@@ -22,8 +22,8 @@ class ContactUs extends React.Component {
   render() {
     return (
       <div>
-        This is Contact Us Page...
-        <h3>{`Counter : ${this.state.counter}`}</h3>
+        <div className="text-title">Contact Us Page</div>
+        <p>{`Counter : ${this.state.counter}`}</p>
         <button onClick={this.reduceCounter}>-</button>
         <button onClick={this.addCounter}>+</button>
       </div>

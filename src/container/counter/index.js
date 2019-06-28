@@ -6,7 +6,9 @@ import { incrementCounter, decrementCounter } from '../../actions/counter';
 
 const Counter = props => (
   <div>
-    {`Counter = ${props.counter}`}
+    <div className="text-title">Counter Page</div>
+
+    <p>{`Counter : ${props.counter}`}</p>
     <div>
       <button onClick={props.decrementCounter}> - </button>
       <button onClick={props.incrementCounter}> + </button>
