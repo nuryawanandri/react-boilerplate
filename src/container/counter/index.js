@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { incrementCounter, decrementCounter } from '../../reducer/counter';
+import { incrementCounter, decrementCounter } from '../../actions/counter';
 
 const Counter = props => (
   <div>
-    {`Counter  = ${props.counter}`}
+    {`Counter = ${props.counter}`}
     <div>
       <button onClick={props.decrementCounter}> - </button>
       <button onClick={props.incrementCounter}> + </button>

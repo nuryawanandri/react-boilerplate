@@ -1,3 +1,5 @@
+import { ADD_COUNTER, REDUCER_COUNTER } from '../constants';
+
 export const incrementCounter = () => {
   return { type: ADD_COUNTER };
 };
