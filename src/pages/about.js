@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Head from 'next/head';
 import AboutContainer from '../container/about';
 
-class About extends React.Component {
-  static async getInitialProps({ query }) {
-    return {
-      id: query.id
-    };
-  }
+const About = props => (
+  <Fragment>
+    <Head>
+      <title>About {props.id} | Next.js</title>
+    </Head>
+    <AboutContainer {...props} />
+  </Fragment>
+);
 
-  render() {
-    return <AboutContainer {...this.props} />;
-  }
-}
+About.getInitialProps = async ({ query }) => {
+  return { id: query.id };
+};
 
 export default About;

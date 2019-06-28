@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -22,6 +23,9 @@ class ContactUs extends React.Component {
   render() {
     return (
       <div>
+        <Head>
+          <title>Contact Us | Next.js</title>
+        </Head>
         <div className="text-title">Contact Us Page</div>
         <p>{`Counter : ${this.state.counter}`}</p>
         <button onClick={this.reduceCounter}>-</button>

@@ -6,6 +6,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="stylesheet" href="/static/css/styles.css" />
+          <title>Next.js</title>
         </Head>
         <body>
           <div className="container">

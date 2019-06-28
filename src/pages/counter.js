@@ -1,11 +1,14 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
+import Head from 'next/head';
 import CounterContainer from '../container/counter';
 
-class Counter extends React.Component {
-  render() {
-    return <CounterContainer />;
-  }
-}
+const Counter = () => (
+  <Fragment>
+    <Head>
+      <title>Counter | Next.js</title>
+    </Head>
+    <CounterContainer />
+  </Fragment>
+);
 
 export default Counter;
