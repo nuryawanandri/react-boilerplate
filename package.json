@@ -12,21 +12,21 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "apisauce": "^1.0.3",
-    "chalk": "^2.4.2",
-    "cross-env": "^5.2.0",
-    "dotenv": "^8.0.0",
+    "apisauce": "^1.1.2",
+    "chalk": "^4.1.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "next": "^8.1.0",
+    "next": "^9.5.3",
     "next-compose-plugins": "^2.2.0",
-    "next-redux-saga": "^4.0.2",
-    "next-redux-wrapper": "^3.0.0-alpha.3",
+    "next-redux-saga": "^4.1.2",
+    "next-redux-wrapper": "^6.0.2",
     "next-routes": "^1.4.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux": "^4.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
-    "redux-saga": "^1.0.3"
+    "redux-saga": "^1.1.3"
   }
 }
